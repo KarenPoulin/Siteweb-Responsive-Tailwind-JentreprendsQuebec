@@ -9,6 +9,14 @@ h1, h2, h3, h4, h5, h6, dt {
   font-family: "Roboto Slab", serif;
 }
 
-p, span, dd, button {
+p, dd, button {
+  font-family: "Work Sans", sans-serif;
+}
+
+.RobotoSlab {
+  font-family: "Roboto Slab", serif;
+}
+
+.WorkSans {
   font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
