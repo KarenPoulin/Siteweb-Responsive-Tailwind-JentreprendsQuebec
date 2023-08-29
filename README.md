@@ -23,3 +23,7 @@ https://tailwind-elements.com/docs/standard/designblocks/newsletter/
 
 Stats section partly used card full width tabs component from flowbite:
 https://flowbite.com/docs/components/card/
+
+
+Inspiration pour nesletter field:
+https://tailwindui.com/components/marketing/sections/newsletter-sections
