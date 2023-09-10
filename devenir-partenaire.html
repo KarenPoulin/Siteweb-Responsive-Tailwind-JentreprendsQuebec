@@ -77,6 +77,87 @@
             </div>
         </section>
 
+
+        <!-- FORMULAIRE -->
+        <section class="py-20 bg-neutral-900">
+            <div class="px-12 grid grid-cols-1">
+                <form action="">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="mb-4 md:mr-3">
+                                <label for="prenom" class="block mb-1 text-sm">Prénom de la personne resources <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                            <div class="mb-4 md:ml-3">
+                                <label for="nom" class="block mb-1 text-sm">Nom de la personne resource <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="nom" name="nom" placeholder="Nom" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="mb-4 md:mr-3">
+                                <label for="nom_entreprise" class="block mb-1 text-sm">Nom de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="nom_entreprise" name="nom_entreprise" placeholder="Nom de l'entreprise" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                            <div class="mb-4 md:ml-3">
+                                <label for="categorie_entreprise" class="block mb-1 text-sm">Catégorie de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                <select name="categorie_entreprise" id="categorie_entreprise"
+                                class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500" required>
+                                    <option value="" selected>Choisir une option</option>
+                                    <option value="entreprise_privee">Entreprise privée</option>
+                                    <option value="osbl">OSBL</option>
+                                    <option value="municipalite">Municipalité</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+
+                       <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="mb-4 md:mr-3">
+                                <label for="courriel" class="block mb-1 text-sm">Courriel <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="email" id="courriel" name="courriel" placeholder="johndoe@entreprise.com" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                            <div class="mb-4 md:ml-3">
+                                <label for="telephone" class="block mb-1 text-sm">Numéro de téléphone <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="18005555555" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                       </div>
+
+                       <div class="grid grid-cols-1 md:grid-cols-2">
+                            <div class="mb-4 md:mr-3">
+                                <label for="adresse" class="block mb-1 text-sm">Adresse de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="adresse" name="adresse" placeholder="999, rue de l'Inconnu" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                            <div class="mb-4 md:ml-3">
+                                <label for="codepostal" class="block mb-1 text-sm">Code postal de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="codepostal" name="codepostal" placeholder="A0A 0A0" required
+                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            </div>
+                       </div>
+
+                       <div class="grid grid-cols-1">
+                            <div>
+                                <label for="submit" class="hidden">Soumettre</label>
+                                <input type="submit" id="submit" value="Soumettre le formulaire"
+                                class="bg-emerald-500">
+                            </div>
+                            <div>
+                                <label for="reset" class="hidden">Vider le formulaire</label>
+                                <input type="reset" id="reset" value="Vider le formulaire"
+                                class="bg-emerald-500">
+                            </div>
+                       </div>
+                </form>
+            </div>
+        </section>
+
+
     </main>
 
 
