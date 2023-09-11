@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v13';
+ const CACHE_NAME = 'static-cache-v14';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -57,7 +57,7 @@ self.addEventListener('activate', (evt) => {
     self.clients.claim();
 });
 
-self.addEventListener('fetch', (evt) => {
+/* self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
     //Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
@@ -71,6 +71,27 @@ self.addEventListener('fetch', (evt) => {
                     .then((cache) => {
                         return cache.match('/TP3_PoulinLarochelleKaren/offline.html');
                     });
+            })
+    );
+}); */
+
+self.addEventListener('fetch', (evt) => {
+    console.log('[ServiceWorker] Fetch', evt.request.url);
+    //Add fetch event handler here.
+    if (evt.request.mode !== 'navigate') {
+        // Not a page navigation, bail.
+        return;
+    }
+    evt.respondWith(
+        fetch(evt.request)
+            .then((response) => {
+                // Handle successful fetch
+                return response;
+            })
+            .catch((error) => {
+                console.error('Fetch failed:', error);
+                // Serve the offline page from cache here
+                return caches.match('/TP3_PoulinLarochelleKaren/offline.html');
             })
     );
 });
