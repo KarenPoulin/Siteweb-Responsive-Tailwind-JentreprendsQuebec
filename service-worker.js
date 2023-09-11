@@ -1,32 +1,14 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v17';
+ const CACHE_NAME = 'static-cache-v18';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
     'offline.html',
-    'index.html',
-    'a-propos.html',
-    'confirmation.html',
-    'devenir-partenaire.html',
-    'evenements.html',
-    'styles/css/normalize.css',
-    'styles/css/style.css',
-    'scripts/validateForm.js',
-    'scripts/validateNewsletterForm.js',
-    'scripts/install.js',
-    'tailwind.config.js',
-    'favicon2.png',
     'images/icons/maskable_icon_x128.png',
     'images/icons/maskable_icon_x144.png',
     'images/icons/maskable_icon_x192.png',
     'images/icons/maskable_icon_x384.png',
-    'images/icons/maskable_icon_x512.png',
-    'images/JQC_Logo_655x504-246x190-horizontal-blanc.png',
-    'images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png',
-    'images/le-grand-chien-logo.png',
-    'images/skypitch.jpeg',
-    'images/test1.jpeg',
-    'images/test2.jpeg'
+    'images/icons/maskable_icon_x512.png'
 ];
 
 self.addEventListener("install", (evt) => {
