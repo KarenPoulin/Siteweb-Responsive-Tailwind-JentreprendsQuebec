@@ -1,11 +1,15 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v3';
+const CACHE_NAME = 'static-cache-v4';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
     'styles/css/normalize.css',
     'styles/css/style.css',
+    'scripts/validateForm.js',
+    'scripts/validateNewsletterForm.js',
+    'tailwind.config.js',
+    'favicon2.png',
     'images/icons/maskable_icon_x128.png',
     'images/icons/maskable_icon_x144.png',
     'images/icons/maskable_icon_x192.png',
