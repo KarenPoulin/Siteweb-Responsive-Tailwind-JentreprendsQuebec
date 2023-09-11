@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v14';
+ const CACHE_NAME = 'static-cache-v15';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -75,7 +75,7 @@ self.addEventListener('activate', (evt) => {
     );
 }); */
 
-self.addEventListener('fetch', (evt) => {
+/* self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
     //Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
@@ -94,4 +94,28 @@ self.addEventListener('fetch', (evt) => {
                 return caches.match('/TP3_PoulinLarochelleKaren/offline.html');
             })
     );
-});
+}); */
+
+self.addEventListener('fetch', (event) => {
+    if (event.request.mode === 'navigate') {
+      event.respondWith(
+        // Handle navigation preload request here
+        fetch(event.request)
+          .then((response) => {
+            // Process the response if needed
+            return response;
+          })
+          .catch(() => {
+            // Handle errors if necessary
+            return caches.match('/offline.html'); // Respond with an offline page from cache
+          })
+      );
+      // Use waitUntil to ensure the promise settles before the event finishes
+      event.waitUntil(
+        (async () => {
+          const preloadResponse = await event.preloadResponse;
+          // Do something with preloadResponse if needed
+        })()
+      );
+    }
+  });
