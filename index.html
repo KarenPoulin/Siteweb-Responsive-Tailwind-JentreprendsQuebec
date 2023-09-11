@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon2.png">
     <title>J'entreprends Quebec - Accueil</title>
+    <!-- SCRIPT POUR SERVICE WORKER POUR PWA -->
     <script>
         // Register service worker.
         if ('serviceWorker' in navigator) {
@@ -73,6 +74,10 @@
                         <li>
                             <a href="a-propos.html" class="block py-2 pl-3 pr-4 uppercase tracking-wide text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-emerald-500 lg:p-0 md:dark:hover:text-emerald-500 dark:text-white 
                             dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500">À propos</a>
+                        </li>
+                        <!-- BOUTON INSTALLATION PWA HIDDEN PAR DEFAUT -->
+                        <li>
+                            <a id="butInstall" aria-label="Install" hidden>Installer la PWA</a>
                         </li>
                     </ul>
                 </div>
@@ -239,5 +244,7 @@
         </div>
        </section>
     </footer>
+    <!-- POUR INSTALLATION PWA APP -->
+    <script src="js/install.js"></script>
 </body>
 </html>
