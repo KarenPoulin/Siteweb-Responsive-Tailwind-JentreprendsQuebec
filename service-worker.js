@@ -1,9 +1,14 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v19';
+ const CACHE_NAME = 'static-cache-v20';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
     'offline.html',
+    'a-propos.html',
+    'confirmation.html',
+    'devenir-partenaire.html',
+    'evenements.html',
+    'index.html',
     'style/css/normalize.css',
     'style/css/style.css',
     'scripts/install.js',
