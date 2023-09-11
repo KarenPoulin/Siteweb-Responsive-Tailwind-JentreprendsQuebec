@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v15';
+ const CACHE_NAME = 'static-cache-v16';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -57,7 +57,7 @@ self.addEventListener('activate', (evt) => {
     self.clients.claim();
 });
 
-/* self.addEventListener('fetch', (evt) => {
+self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
     //Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
@@ -73,7 +73,7 @@ self.addEventListener('activate', (evt) => {
                     });
             })
     );
-}); */
+});
 
 /* self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
@@ -96,7 +96,7 @@ self.addEventListener('activate', (evt) => {
     );
 }); */
 
-self.addEventListener('fetch', (event) => {
+/* self.addEventListener('fetch', (event) => {
     if (event.request.mode === 'navigate') {
       event.respondWith(
         // Handle navigation preload request here
@@ -118,4 +118,4 @@ self.addEventListener('fetch', (event) => {
         })()
       );
     }
-  });
+  }); */
