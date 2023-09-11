@@ -63,9 +63,9 @@
     <main>
 
         <!-- CARROUSEL -->
-        <section>
+        <section class="bg-neutral-900">
 
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <div id="default-carousel" class="relative w-full xl:mx-auto xl:max-w-screen-xl" data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden sm:h-64 md:h-80 lg:h-96 xl:h[38rem] 2xl:h-[42rem]">
                     <!-- Item 1 -->
@@ -121,57 +121,59 @@
 
         <!-- NEWSLETTER -->
         <section class="py-20 text-center bg-neutral-900 lg:text-left">
-            <div class="flex flex-wrap justify-center">
-                <div class="w-full shrink-0 grow-0 basis-auto px-3 md:w-10/12 lg:w-11/12 xl:w-10/12">
-                    <div class="grid items-center gap-x-6 lg:grid-cols-2">
-
-                        <div class="mb-10 lg:mb-0">
-                            <h2 class="text-3xl leading-10 font-semibold dark:text-white">
-                                Ne manquez pas un évènement.
-                                <br />
-                                <span class="text-primary dark:text-primary-400">S'abonner à l'infolettre</span>
-                            </h2>
-                        </div>
-            
-                        <form action="" onsubmit="return validateForm()" novalidate>
-                            <div class="mb-6 flex flex-col items-center md:items-start md:flex-row :mb-0 md:flex">
-                                <div class="relative mb-3 w-full md:mr-3 md:mb-0 xl:w-96" data-te-input-wrapper-init>
-                                    <div class="inputControl">
-                                        <label for="newsletterInput" class="hidden pointer-events-none">Courriel</label>
-                                        <input type="text"  id="newsletterEmail" placeholder="Entrez votre courriel" minlength="6" maxlength="100"
-                                            class="peer block min-h-[auto] mx-auto md:w-full rounded border-0 bg-white py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear hover:border-4 hover:border-emerald-500 
-                                            focus:border-4 focus:border-emerald-500 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-900 dark:placeholder:text-neutral-900 
-                                            dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-50" required/>
-                                        <div class="errorMessage md:text-left"></div>
-                                    </div>
-                                </div>
-                                <button type="submit"
-                                        class="relative inline-flex items-center justify-center w-48 p-1 mb-2 md:mb-0 md:mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 
-                                        group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-00 dark:focus:ring-emerald-00">
-                                    <span class="relative w-44 px-6 py-2.5 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-900 rounded-md group-hover:bg-opacity-0 RobotoSlab">
-                                        S'abonner
-                                    </span>
-                                </button>
+            <div class="mx-12 md:mx-20 2xl:mx-auto 2xl:max-w-screen-xl">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full shrink-0 grow-0 basis-auto md:w-10/12 lg:w-11/12 xl:w-10/12">
+                        <div class="grid items-center gap-x-6 lg:grid-cols-2">
+    
+                            <div class="mb-10 lg:mb-0">
+                                <h2 class="text-3xl leading-10 font-semibold dark:text-white">
+                                    Ne manquez pas un évènement.
+                                    <br />
+                                    <span class="text-primary dark:text-primary-400">S'abonner à l'infolettre</span>
+                                </h2>
                             </div>
-                        </form>
+                
+                            <form action="" onsubmit="return validateForm()" novalidate>
+                                <div class="mb-6 flex flex-col items-center md:items-start md:flex-row :mb-0 md:flex">
+                                    <div class="relative mb-3 w-full md:mr-3 md:mb-0 xl:w-96" data-te-input-wrapper-init>
+                                        <div class="inputControl">
+                                            <label for="newsletterInput" class="hidden pointer-events-none">Courriel</label>
+                                            <input type="text"  id="newsletterEmail" placeholder="Entrez votre courriel" minlength="6" maxlength="100"
+                                                class="peer block min-h-[auto] mx-auto md:w-full rounded border-0 bg-white py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear hover:border-4 hover:border-emerald-500 
+                                                focus:border-4 focus:border-emerald-500 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-900 dark:placeholder:text-neutral-900 
+                                                dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-50" required/>
+                                            <div class="errorMessage md:text-left"></div>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                            class="relative inline-flex items-center justify-center w-48 p-1 mb-2 md:mb-0 md:mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 
+                                            group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-00 dark:focus:ring-emerald-00">
+                                        <span class="relative w-44 px-6 py-2.5 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-900 rounded-md group-hover:bg-opacity-0 RobotoSlab">
+                                            S'abonner
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- EVENEMENT CARD -->
-        <section class="bg-neutral-800 flex justify-center">
-
-            <div class="w-10/12 my-20 mx-10 bg-white rounded-lg shadow bg-opacity-0">
-                <img class="rounded-lg drop-shadow-xl" src="images/test1.jpeg" alt="" />
-                <div class="p-5">
-                    <h5 class="mb-2 text-center tracking-wider text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dream Dating</h5>
-                    <p class="text-center font-normal text-gray-700 dark:text-gray-400">
-                        Le 18 novembre, J’entreprends Québec organise une série d’activités brises glaces visant à découvrir les rêves des participants du start-up weekend et créer des opportunités de connexion entre eux! 
-                        Gratuit pour tous les participants du Start-up Wkd!</p>
+        <section class="bg-neutral-800">
+            <div class="flex justify-center">
+                <div class="w-10/12 my-20 mx-12 md:mx-20 lg:mx-24 2xl:mx-auto 2xl:max-w-screen-xl bg-white rounded-lg shadow bg-opacity-0">
+                    <img class="rounded-lg drop-shadow-xl" src="images/test1.jpeg" alt="" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-center tracking-wider text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dream Dating</h5>
+                        <p class="text-center font-normal text-gray-700 dark:text-gray-400">
+                            Le 18 novembre, J’entreprends Québec organise une série d’activités brises glaces visant à découvrir les rêves des participants du start-up weekend et créer des opportunités de connexion entre eux! 
+                            Gratuit pour tous les participants du Start-up Wkd!</p>
+                    </div>
                 </div>
             </div>
-
         </section>
 
         <!-- PHOTOS -->
