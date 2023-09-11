@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v20';
+ const CACHE_NAME = 'static-cache-v21';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -18,7 +18,9 @@
     'images/icons/maskable_icon_x144.png',
     'images/icons/maskable_icon_x192.png',
     'images/icons/maskable_icon_x384.png',
-    'images/icons/maskable_icon_x512.png'
+    'images/icons/maskable_icon_x512.png',
+    'images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png',
+    'tailwind.config.js'
 ];
 
 self.addEventListener("install", (evt) => {
