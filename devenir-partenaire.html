@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon2.png">
-    <title>J'entreprends Quebec - Accueil</title>
+    <title>J'entreprends Quebec - devenir partenaire</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
                 </a>
                 <div class="flex md:order-2">
                     <a href="devenir-partenaire.html" aria-current="page">
-                        <button class=" relative inline-flex items-center justify-center bg-gradient-to-br from-green-400 to-blue-600 px-5 py-2.5 text-xs sm:text-sm font-medium text-white rounded-lg text-center mr-2 mb-2 dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500 RobotoSlab">Devenir Partenaire</button>
+                        <button class="relative inline-flex items-center justify-center bg-gradient-to-br from-green-400 to-blue-600 px-5 py-2.5 text-xs sm:text-sm font-medium text-white rounded-lg text-center mr-2 mb-2 dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500 RobotoSlab">Devenir Partenaire</button>
 <!--                         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-900 rounded-md group-hover:bg-opacity-0 RobotoSlab">
                             Devenir Partenaire
                         </span> -->
@@ -62,9 +62,6 @@
         </nav>  
     </header>
 
-
-
-<body>
     
     <main>
 
@@ -81,76 +78,117 @@
         <!-- FORMULAIRE -->
         <section class="py-20 bg-neutral-900">
             <div class="px-12 grid grid-cols-1">
-                <form action="">
+                <form id="formBecomePartner" action="confirmation.html" method="post" onsubmit="return validateForm()" novalidate>
 
+                        <!-- PRENOM ET NOM -->
                         <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="mb-4 md:mr-3">
-                                <label for="prenom" class="block mb-1 text-sm">Prénom de la personne resources <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required
+                            <div class="inputControl md:mr-3">
+                               <div>
+                                <label for="prenom" class="block mb-1 text-sm">Prénom de la personne resource <span class="text-sm font-medium text-red-600">*</span></label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom"  minlength="2" maxlength="50" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                               </div>
+                               <div class="errorMessage"></div>
                             </div>
-                            <div class="mb-4 md:ml-3">
-                                <label for="nom" class="block mb-1 text-sm">Nom de la personne resource <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="text" id="nom" name="nom" placeholder="Nom" required
-                                        class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                            <div class="inputControl mb-4 md:ml-3">
+                               <div>
+                                    <label for="nom" class="block mb-1 text-sm">Nom de la personne resource <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="text" id="nom" name="nom" placeholder="Nom"  minlength="2" maxlength="50" required
+                                            class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                               </div>
+                               <div class="errorMessage"></div>
                             </div>
                         </div>
 
+                        <!-- NOM ET CATEGORIE ENTREPRISE -->
                         <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="mb-4 md:mr-3">
-                                <label for="nom_entreprise" class="block mb-1 text-sm">Nom de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="text" id="nom_entreprise" name="nom_entreprise" placeholder="Nom de l'entreprise" required
+                            <div class="inputControl mb-4 md:mr-3">
+                                <div>
+                                    <label for="nom_entreprise" class="block mb-1 text-sm">Nom de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="text" id="nom_entreprise" name="nom_entreprise" placeholder="Nom de l'entreprise" minlength="2" maxlength="100" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
-                            <div class="mb-4 md:ml-3">
-                                <label for="categorie_entreprise" class="block mb-1 text-sm">Catégorie de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
-                                <select name="categorie_entreprise" id="categorie_entreprise"
-                                class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500" required>
-                                    <option value="" selected>Choisir une option</option>
-                                    <option value="entreprise_privee">Entreprise privée</option>
-                                    <option value="osbl">OSBL</option>
-                                    <option value="municipalite">Municipalité</option>
-                                    <option value="autre">Autre</option>
-                                </select>
+                            <div class="inputControl mb-4 md:ml-3">
+                                <div>
+                                    <label for="categorie_entreprise" class="block mb-1 text-sm">Catégorie de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <select name="categorie_entreprise" id="categorie_entreprise"
+                                    class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500" required>
+                                        <option value="" selected>Choisir une option</option>
+                                        <option value="entreprise_privee">Entreprise privée</option>
+                                        <option value="osbl">OSBL</option>
+                                        <option value="municipalite">Municipalité</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
                         </div>
 
+                        <!-- COURRIEL ET TELEPHONE -->
                        <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="mb-4 md:mr-3">
-                                <label for="courriel" class="block mb-1 text-sm">Courriel <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="email" id="courriel" name="courriel" placeholder="johndoe@entreprise.com" required
+                            <div class="inputControl mb-4 md:mr-3">
+                                <div>
+                                    <label for="courriel" class="block mb-1 text-sm">Courriel <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="email" id="courriel" name="courriel" placeholder="johndoe@entreprise.com" minlength="6" maxlength="100" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
-                            <div class="mb-4 md:ml-3">
-                                <label for="telephone" class="block mb-1 text-sm">Numéro de téléphone <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="tel" id="telephone" name="telephone" placeholder="18005555555" required
+                            <div class="inputControl mb-4 md:ml-3">
+                                <div>
+                                    <label for="telephone" class="block mb-1 text-sm">Numéro de téléphone <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="tel" id="telephone" name="telephone" placeholder="18005555555"  minlength="11" maxlength="11" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
                        </div>
 
+                       <!-- ADRESSE ET CODE POSTAL -->
                        <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="mb-4 md:mr-3">
-                                <label for="adresse" class="block mb-1 text-sm">Adresse de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="text" id="adresse" name="adresse" placeholder="999, rue de l'Inconnu" required
+                            <div class="inputControl mb-4 md:mr-3">
+                                <div>
+                                    <label for="adresse" class="block mb-1 text-sm">Adresse de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="text" id="adresse" name="adresse" placeholder="999, rue de l'Inconnu"  minlength="2" maxlength="100" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
-                            <div class="mb-4 md:ml-3">
-                                <label for="codepostal" class="block mb-1 text-sm">Code postal de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
-                                <input type="text" id="codepostal" name="codepostal" placeholder="A0A 0A0" required
+                            <div class="inputControl mb-4 md:ml-3">
+                                <div>
+                                    <label for="codepostal" class="block mb-1 text-sm">Code postal de l'entreprise <span class="text-sm font-medium text-red-600">*</span></label>
+                                    <input type="text" id="codepostal" name="codepostal" placeholder="A0A0A0"  minlength="6" maxlength="6" required
                                         class="p-2.5 w-full text-neutral-900 text-sm rounded-lg hover:border-emerald-500 dark:hover-border-emerald-500 focus:border-emerald-500 dark:focus:border-emerald-500">
+                                </div>
+                                <div class="errorMessage"></div>
                             </div>
                        </div>
+<!--                        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xs sm:text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 
+                                group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500">
+                                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-900 rounded-md group-hover:bg-opacity-0 RobotoSlab">
+                                Devenir Partenaire
+                            </span>
+                        </button> -->
 
-                       <div class="grid grid-cols-1">
+                       <!-- BOUTONS -->
+                       <div class="flex flex-col sm:flex-row">
                             <div>
                                 <label for="submit" class="hidden">Soumettre</label>
-                                <input type="submit" id="submit" value="Soumettre le formulaire"
-                                class="bg-emerald-500">
+                                <button type="submit" id="submitForm"
+                                        class="relative inline-flex items-center justify-center p-0.5 mb-4 sm:mb-2 mr-4 overflow-hidden text-xs sm:text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 
+                                        group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500">
+                                        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-neutral-900 dark:bg-neutral-900 rounded-md group-hover:bg-opacity-0 RobotoSlab">
+                                                Soumettre
+                                        </span>
+                                </button>
                             </div>
                             <div>
                                 <label for="reset" class="hidden">Vider le formulaire</label>
                                 <input type="reset" id="reset" value="Vider le formulaire"
-                                class="bg-emerald-500">
+                                class="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 overflow-hidden text-xs sm:text-sm font-medium text-gray-900 rounded-lg border-white border-2
+                                         hover:text-neutral-900 hover:bg-white dark:text-white focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500">
                             </div>
                        </div>
                 </form>
@@ -252,6 +290,7 @@
         </div>
        </section>
     </footer>
+    <script src="scripts/validateForm.js"></script>
 
 </body>
 </html>
