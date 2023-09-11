@@ -27,7 +27,7 @@
         "type": "image/png",
         "purpose": "any maskable"
     }],
-    "start_url": "index.html",
+    "start_url": "https://karenpoulin.github.io/TP3_PoulinLarochelleKaren/index.html",
     "display": "standalone",
     "background_color": "#171717",
     "theme_color": "#171717"
