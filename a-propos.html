@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Générer l'intécelle entrepreneuriale et tisser des liens forts entre passionnées.">
+    <!-- PWA -->
+    <meta name="description" content="Générer l'étincelle entrepreneuriale et tisser des liens forts entre passionnées.">
+    <meta name="theme-color" content="#171717"/>
+    <!-- FIN PWA -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
+    <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIN TAILWIND -->
     <link rel="icon" type="image/x-icon" href="favicon2.png">
     <title>J'entreprends Quebec - A propos</title>
 </head>
@@ -58,6 +63,10 @@
                             <a href="a-propos.html" class="block py-2 pl-3 pr-4 uppercase tracking-wide text-white bg-emerald-500rounded lg:bg-transparent lg:text-emerald-500 lg:p-0 lg:dark:text-emerald-500 
                             WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-current="page">À propos</a>
                         </li>
+                        <!-- BOUTON INSTALLATION PWA HIDDEN PAR DEFAUT -->
+                        <li class="hidden">
+                            <button id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -69,10 +78,10 @@
     <main>
 
         <!-- HERO MISSION -->
-        <section class="bg-center bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+        <section class="bg-center bg-[url('images/hero_a-propos.jpg')] bg-gray-700 bg-blend-multiply">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                <h1 class="mb-4 mx-8 md:mx-12 lg:mx-14  text-4xl font-extrabold tracking-wide leading-9 text-white md:text-5xl lg:text-6xl">Notre mission</h1>
-                <p class="mb-8 mx-8 md:mx-12 lg:mx-14 text-lg font-normal text-gray-300 lg:text-xl">Créer une culture entrepreneuriale nouvelle et rassembleuse</p>
+                <h2 class="mb-4 mx-8 md:mx-12 lg:mx-14  text-4xl font-extrabold tracking-wide leading-9 text-white md:text-5xl lg:text-6xl">Notre mission</h2>
+                <p class="mb-8 mx-8 md:mx-12 lg:mx-14 lg:mb-4 text-lg font-normal text-gray-300 lg:text-xl">Créer une culture entrepreneuriale nouvelle et rassembleuse</p>
             </div>
         </section>
 
@@ -150,25 +159,20 @@
         <!-- FONDATEUR -->
         <section class="py-20 bg-neutral-900">
             <div class="mx-12 grid grid-cols-1 justify-items-center md:mx-20 lg:grid-cols-2 lg:gap-x-8 lg:items-center 2xl:mx-auto 2xl:max-w-screen-xl 
-                        bg-neutral-900 shadow dark:bg-neutral-900">
-                <img class="object-cover w-max rounded-t-lg h-96 lg:h-auto lg:w-96 lg:rounded-none lg:rounded-lg xl:w-auto xl:h-96" src="images/test2.jpeg" alt="">
+                        bg-neutral-900 dark:bg-neutral-900">
+                <img class="object-cover w-max rounded-t-lg h-96 drop-shadow-xl lg:h-auto lg:w-96 lg:rounded-none lg:rounded-lg xl:w-auto xl:h-96" src="images/jeff-doucet.jpg" alt="Le Fondateur Jeff Doucet">
                 <div class="flex flex-col justify-between py-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Jeff Doucet - Le Rassembleur</h5>
-                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
-                        Jeff Doucet, co-fondateur et PDG de Le Grand Chien, est un créateur passionné spécialisé dans le branding, 
-                        le marketing expérientiel et l'entrepreneuriat. Ses compétences en gestion de marque, communication stratégique 
-                        et marketing digital ont grandement contribué au succès de Le Grand Chien. En parallèle, en tant que co-fondateur 
-                        et PDG de J'entreprends Québec!, il promeut une culture entrepreneuriale inclusive grâce à des initiatives novatrices depuis 2014, 
-                        renforçant les liens au sein de la communauté entrepreneuriale.
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Jeff Doucet - Le Rassembleur</h3>
+                    <p class="mb-3 font-normal text-sm text-white dark:text-gray-400">
+                        Jeff Doucet, co-fondateur et PDG de Le Grand Chien, est un passionné du branding, du marketing expérientiel et de l'entrepreneuriat. 
+                        Ses compétences en gestion de marque, communication stratégique et marketing digital ont été essentielles pour le succès de Le Grand Chien. 
+                        Il est également le co-fondateur et PDG de J'entreprends Québec!, où il favorise une culture entrepreneuriale inclusive depuis 2014. 
                     </p>
-                    <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
-                        Il excelle également en tant que créateur d'événements au sein de la 
-                        "communauté La Doxa" et soutient activement la prochaine génération d'entrepreneurs en tant que membre actif du comité Moovjee. 
-                        Son leadership, sa créativité et sa vision inspirante sont particulièrement mis en évidence par le festival Canicule Hivernale, 
-                        qui rassemble chaque année plus de 10 000 jeunes. Son projet innovant, Wun, se distingue par son immersion, son outil virtuel intégré 
-                        et des événements thématiques, témoignant de son engagement envers le développement entrepreneurial. Dans l'univers des affaires novatrices 
-                        et du marketing expérientiel, Jeff Doucet brille grâce à ses compétences interpersonnelles, 
-                        son aisance en public et son adaptabilité marquée, le plaçant au cœur de l'écosystème entrepreneurial.
+                    <p class="mb-3 font-normal text-sm text-white dark:text-gray-400">
+                        Jeff excelle en tant que créateur d'événements au sein de la "communauté La Doxa" et soutient activement les jeunes entrepreneurs en tant que membre du comité Moovjee. 
+                        Son leadership, sa créativité et sa vision sont particulièrement visibles dans le festival Canicule Hivernale, qui attire chaque année plus de 10 000 jeunes. 
+                        Son projet innovant, Wun, se distingue par son immersion, son outil virtuel intégré et des événements thématiques, montrant son engagement envers le développement entrepreneurial. 
+                        Jeff Doucet est une figure centrale de l'écosystème entrepreneurial grâce à ses compétences interpersonnelles, sa capacité à s'exprimer en public et son adaptabilité marquée.
                     </p>
                 </div>
             </div>
@@ -176,22 +180,22 @@
 
 
         <!-- PARTENAIRES -->
-        <section class="py-20 bg-neutral-900">
-            
+        <section class="py-20 bg-neutral-900 grid grid-cols-1">
+            <h2 class="mb-20 mx-8 md:mx-12 lg:mx-14 text-center text-4xl font-extrabold tracking-wide leading-9 text-white sm:text-5xl lg:text-6xl">Nos partenaires</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mx-12 md:mx-20 xl:grid-cols-4 2xl:grid-cols-6 2xl:mx-auto 2xl:max-w-screen-xl">
 
                     <a href="https://legrandchien.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-legrandchien.png" alt="Logo Le Grand Chien">
                     </a>
 
                     <a href="https://krowproductions.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-krow.png" alt="Logo Les Productions Krow">
                     </a>
                 
                     <a href="https://lesfestifs.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-lesfestifs.png" alt="Logo Les Festifs">
                     </a>
                 
@@ -201,7 +205,7 @@
                     </a>
                 
                     <a href="https://www.vigiquebec.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-vigi.png" alt="Logo Vigi Services Juridiques">
                     </a>
                 
@@ -211,12 +215,12 @@
                     </a>
                 
                     <a href="https://yankeemedia.ca/en/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-yankeemedia.png" alt="Logo Yankee Media">
                     </a>
                 
                     <a href="https://www.entrepreneuriat-quebec.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-entrepreunariatquebec.png" alt="Logo Entrepreunariat Québec">
                     </a>
                 
@@ -226,17 +230,17 @@
                     </a>
                 
                     <a href="https://www.blackwaretech.com/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-blackwaretechnologies.png" alt="Logo Blackware Technologies">
                     </a>
                 
                     <a href="https://aventurex.ca/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-aventurex.png" alt="Logo Aventurex">
                     </a>
                 
                     <a href="https://www.le-cercle.ca/" target="_blank">
-                        <img class="h-auto max-w-full rounded-full hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
+                        <img class="h-auto max-w-full rounded-full drop-shadow-xl hover:scale-110 transition duration-500 focus:ring-4 focus:outline-none focus:ring-emerald-500" 
                         src="images/partenaires/logo-partenaire-lecerclelabvivant.png" alt="Logo Le Cercle Lab Vivant">
                     </a>
                 
@@ -282,15 +286,18 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-6 sm:gap-4 sm:grid-cols-3">
-                        <a href="evenements.html">
-                            <h2 class="mb-1 sm:mb-2 md:ml-2 lg:ml-0 text-left lg:text-center text-sm font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">Évènements</h2>
-                        </a>
-                        <a href="a-propos.html">
-                            <h2 class="mb-1 sm:mb-2 text-sm text-left lg:text-center font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">À propos</h2>
-                        </a>
-                        <a href="devenir-partenaire.html">
-                            <h2 class="mb-1 sm:mb-2 text-sm text-left lg:text-center font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">Devenir Partenaire</h2>
-                        </a>
+                            <a href="evenements.html"
+                            class="mb-1 sm:mb-2 md:ml-2 lg:ml-0 text-left lg:text-center text-sm font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">
+                            Évènements
+                            </a>
+                            <a href="a-propos.html"
+                                class="mb-1 sm:mb-2 text-sm text-left lg:text-center font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">
+                                À propos
+                            </a>
+                            <a href="devenir-partenaire.html"
+                                class="mb-1 sm:mb-2 text-sm text-left lg:text-center font-semibold text-white tracking-wider uppercase dark:text-white hover:text-emerald-500 WorkSans">
+                                Devenir Partenaire
+                            </a>
                 </div>
             </div>
 
@@ -338,5 +345,6 @@
         </div>
        </section>
     </footer>
+
 </body>
 </html>
