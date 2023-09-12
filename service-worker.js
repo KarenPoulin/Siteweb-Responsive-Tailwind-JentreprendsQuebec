@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v26';
+ const CACHE_NAME = 'static-cache-v27';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -40,6 +40,18 @@
     'images/caroussel3.jpg',
     'images/caroussel4.jpg',
     'images/caroussel5.jpg',
+    'images/evenement-gallery1.jpg',
+    'images/evenement-gallery2.jpg',
+    'images/evenement-gallery3.jpg',
+    'images/evenement-gallery4.jpg',
+    'images/evenement-gallery5.jpg',
+    'images/evenement-gallery6.jpg',
+    'images/evenement-gallery7.jpg',
+    'images/evenement-gallery8.jpg',
+    'images/evenement-gallery9.jpg',
+    'images/evenement-gallery10.jpg',
+    'images/evenement-gallery11.jpg',
+    'images/evenement-gallery12.jpg',
     'tailwind.config.js'
 ];
 
