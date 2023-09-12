@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v23';
+ const CACHE_NAME = 'static-cache-v24';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -19,39 +19,6 @@
     'images/icons/maskable_icon_x192.png',
     'images/icons/maskable_icon_x384.png',
     'images/icons/maskable_icon_x512.png',
-    'images/partenaires/logo-partenaire-aventurex.png',
-    'images/partenaires/logo-partenaire-blackwaretechnologies.png',
-    'images/partenaires/logo-partenaire-encavale.png',
-    'images/partenaires/logo-partenaire-entrepreunariatquebec.png',
-    'images/partenaires/logo-partenaire-krow.png',
-    'images/partenaires/logo-partenaire-lecerclelabvivant.png',
-    'images/partenaires/logo-partenaire-legrandchien.png',
-    'images/partenaires/logo-partenaire-lesfestifs.png',
-    'images/partenaires/logo-partenaire-ora.png',
-    'images/partenaires/logo-partenaire-vigi.png',
-    'images/partenaires/logo-partenaire-villedequebeclaccentdamerique.png',
-    'images/partenaires/logo-partenaire-yankeemedia.png',
-    'images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png',
-    'images/jeff-doucet.jpg',
-    'images/hero_devenir-partenaire.jpg',
-    'images/hero_a-propos.jpg',
-    'images/caroussel1.jpg',
-    'images/caroussel2.jpg',
-    'images/caroussel3.jpg',
-    'images/caroussel4.jpg',
-    'images/caroussel5.jpg',
-    'images/evenement-gallery1.jpg',
-    'images/evenement-gallery2.jpg',
-    'images/evenement-gallery3.jpg',
-    'images/evenement-gallery4.jpg',
-    'images/evenement-gallery5.jpg',
-    'images/evenement-gallery6.jpg',
-    'images/evenement-gallery7.jpg',
-    'images/evenement-gallery8.jpg',
-    'images/evenement-gallery9.jpg',
-    'images/evenement-gallery10.jpg',
-    'images/evenement-gallery11.jpg',
-    'images/evenement-gallery12.jpg',
     'tailwind.config.js'
 ];
 
