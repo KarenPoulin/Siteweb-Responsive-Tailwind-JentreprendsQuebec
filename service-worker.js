@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v24';
+ const CACHE_NAME = 'static-cache-v25';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -19,6 +19,19 @@
     'images/icons/maskable_icon_x192.png',
     'images/icons/maskable_icon_x384.png',
     'images/icons/maskable_icon_x512.png',
+    'images/partenaires/logo-partenaire-aventurex.png',
+    'images/partenaires/logo-partenaire-blackwaretechnologies.png',
+    'images/partenaires/logo-partenaire-encavale.png',
+    'images/partenaires/logo-partenaire-entrepreunariatquebec.png',
+    'images/partenaires/logo-partenaire-krow.png',
+    'images/partenaires/logo-partenaire-lecerclelabvivant.png',
+    'images/partenaires/logo-partenaire-legrandchien.png',
+    'images/partenaires/logo-partenaire-lesfestifs.png',
+    'images/partenaires/logo-partenaire-ora.png',
+    'images/partenaires/logo-partenaire-vigi.png',
+    'images/partenaires/logo-partenaire-villedequebeclaccentdamerique.png',
+    'images/partenaires/logo-partenaire-yankeemedia.png',
+    'images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png',
     'tailwind.config.js'
 ];
 
