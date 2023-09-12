@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v25';
+ const CACHE_NAME = 'static-cache-v26';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
@@ -32,6 +32,14 @@
     'images/partenaires/logo-partenaire-villedequebeclaccentdamerique.png',
     'images/partenaires/logo-partenaire-yankeemedia.png',
     'images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png',
+    'images/jeff-doucet.jpg',
+    'images/hero_devenir-partenaire.jpg',
+    'images/hero_a-propos.jpg',
+    'images/caroussel1.jpg',
+    'images/caroussel2.jpg',
+    'images/caroussel3.jpg',
+    'images/caroussel4.jpg',
+    'images/caroussel5.jpg',
     'tailwind.config.js'
 ];
 
