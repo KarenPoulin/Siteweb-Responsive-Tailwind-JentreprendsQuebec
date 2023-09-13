@@ -1,4 +1,4 @@
-const validateForm = () => {
+const validateNewsletterForm = () => {
     const email = document.getElementById('newsletterEmail');
     
     const emailValue = email.value.trim();
