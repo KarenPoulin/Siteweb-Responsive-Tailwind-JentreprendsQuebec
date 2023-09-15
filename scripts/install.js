@@ -14,7 +14,7 @@ function saveBeforeInstallPromptEvent(evt) {
         installButton.removeAttribute('hidden');
     }
 
-/* function installPWA(evt) {
+function installPWA(evt) {
     console.log('click');
         // Add code show install prompt & hide the install button.
         deferredInstallPrompt.prompt();
@@ -33,9 +33,9 @@ function saveBeforeInstallPromptEvent(evt) {
                 deferredInstallPrompt = null;
             });
     }
- */
 
-function installPWA() {
+
+/* function installPWA() {
     if (deferredInstallPrompt) {
         deferredInstallPrompt.prompt();
         deferredInstallPrompt.userChoice
@@ -51,7 +51,7 @@ function installPWA() {
                 console.error('Error during PWA installation:', error);
             });
     }
-}
+} */
 
 // Add event listener for appinstalled event
 window.addEventListener('appinstalled', logAppInstalled);
