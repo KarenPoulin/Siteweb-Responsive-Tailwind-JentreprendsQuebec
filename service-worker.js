@@ -1,5 +1,5 @@
  //Update cache names any time any of the cached files change.
- const CACHE_NAME = 'static-cache-v41';
+ const CACHE_NAME = 'static-cache-v42';
 
   //Add list of files to cache here.
   const FILES_TO_CACHE = [
