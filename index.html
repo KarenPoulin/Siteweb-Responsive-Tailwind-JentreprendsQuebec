@@ -39,7 +39,7 @@
 </head>
 <body>
     <header>
-        <nav class="bg-neutral-900 border-gray-200 dark:bg-neutral-900">
+        <nav class="bg-neutral-900 dark:bg-neutral-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="index.html" class="flex items-center focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-label="Accueil">
                     <img src="images/JQC_Logo_655x504-246x190-horizontal-couleur-text-white.png" class="h-6 sm:h-8 mr-3 w-auto" alt="J'entrepends Quebec Logo">
@@ -65,21 +65,21 @@
                     </a>
                 </div>
                 <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
-                    <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-neutral-900 dark:bg-neutral-900 lg:dark:bg-neutral-900 dark:border-gray-700">
+                    <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:bg-neutral-900 dark:bg-neutral-900 lg:dark:bg-neutral-900">
                         <li>
                             <a href="index.html" class="block py-2 pl-3 pr-4 uppercase tracking-wide text-white bg-emerald-500rounded lg:bg-transparent lg:text-emerald-500 lg:p-0 lg:dark:text-emerald-500 
                             WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-current="page" aria-label="Accueil">Accueil</a>
                         </li>
                         <li>
                             <a href="evenements.html" class="block py-2 pl-3 pr-4 uppercase tracking-wide text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-emerald-500 lg:p-0 lg:dark:hover:text-emerald-500 dark:text-white 
-                            dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-label="Évènements">Évènements</a>
+                            dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-label="Évènements">Évènements</a>
                         </li>
                         <li>
                             <a href="a-propos.html" class="block py-2 pl-3 pr-4 uppercase tracking-wide text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-emerald-500 lg:p-0 md:dark:hover:text-emerald-500 dark:text-white 
-                            dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-label="À Propos">À propos</a>
+                            dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent WorkSans focus:ring-4 focus:outline-none focus:ring-emerald-500 dark:focus:ring-emerald-500" aria-label="À Propos">À propos</a>
                         </li>
                         <!-- BOUTON INSTALLATION PWA HIDDEN PAR DEFAUT -->
-                        <li class="hidden">
+                        <li>
                             <button id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
                         </li>
                     </ul>
@@ -91,7 +91,7 @@
     <main>
         <!-- HERO VIDEO -->
         <!-- src="https://www.youtube.com/embed/NmZCEOk9kGA?playlist=NmZCEOk9kGA&loop=1&autoplay=1&mute=1&modestbranding=1" à mettre comme source pour le iframe pour qu'il autoplay en mute -->
-        <section class="bg-neutral-900">
+        <section class="bg-neutral-900 border-b-[12px] border-teal-600">
             <iframe
                 class="w-full border-0"  height="720"
                 src="https://www.youtube.com/embed/NmZCEOk9kGA" title="J&#39;Entreprends Québec_Démo Reel 2019"
@@ -101,30 +101,48 @@
 
         <!-- PRESENTATION -->
         <section>
-            <div class="my-16 mx-12 flex items-center justify-center flex-col md:mx-20  lg:flex-row-reverse lg:my-20 2xl:mx-auto 2xl:max-w-screen-xl">
-                <img class="w-72 pb-5 lg:w-96 lg:pb-0 lg:pl-6" src="images/test1.jpeg" alt="">
-                <div>
-                    <h2 class="pb-3 text-neutral-900 text-center uppercase text-xl font-bold tracking-wider md:text-2xl lg:text-left lg:text-3xl">Cultiver l'Esprit Entrepreneurial</h2>
-                    <p class="text-black text-center leading-5 lg:text-left lg:mx-10">
-                        J'entreprends Québec est une entreprise novatrice axée sur la création d'une culture entrepreneuriale inclusive. 
-                        Notre force réside dans la facilitation des rencontres entre entrepreneurs, la promotion de leurs projets, la collaboration avec divers acteurs de la communauté, 
-                        et la génération de l'esprit entrepreneurial chez les étudiants et les futurs entrepreneurs. Rejoignez-nous pour contribuer à cette aventure entrepreneuriale dynamique!</p>
+             <div>
+                <div class="mt-16 mb-24 mx-12 flex items-center justify-center flex-col md:mx-20 md:mb-32 lg:flex-row-reverse lg:mt-20 lg:mb-36 xl:mb-52 2xl:mx-auto 2xl:max-w-screen-xl">
+                    <img class="w-10/12 mb-5 shadow-[0_6px_15px_7px_rgba(0,0,0,0.25)] md:w-11/12 lg:w-7/12 lg:mb-0 lg:ml-6" src="images/presentation.jpg" alt="Groupe après une évènement entrepreunarial">
+                    <div>
+                        <h2 class="pb-3 text-neutral-900 text-center uppercase text-xl font-light tracking-wider md:text-2xl lg:text-left lg:text-3xl">
+                            Cultiver l'Esprit 
+                            <span class="font-bold text-teal-600">Entrepreneurial</span></h2>
+                        <p class="text-black text-center mx-12 leading-5 lg:text-left lg:mx-10">
+                            J'entreprends Québec est une entreprise novatrice axée sur la création d'une culture entrepreneuriale inclusive. 
+                            Notre force réside dans la facilitation des rencontres entre entrepreneurs, la promotion de leurs projets, la collaboration avec divers acteurs de la communauté, 
+                            et la génération de l'esprit entrepreneurial chez les étudiants et les futurs entrepreneurs. Rejoignez-nous pour contribuer à cette aventure entrepreneuriale dynamique!</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="bg-center bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-36">
-                <h1 class="mx-8 md:mx-12 lg:mx-14 text-4xl font-extrabold tracking-wide leading-tight text-white md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">Nous générons l'étincelle entreprise entrepreneuriale et tissons des liens forts entre passionnés.</h1>
-            </div>
-        </section>
 
-        <section>
-            <div class="my-16 mx-12 flex items-center justify-center flex-col md:mx-20  lg:flex-row lg:my-20 2xl:mx-auto 2xl:max-w-screen-xl">
-                <img class="w-72 pb-5 lg:w-96 lg:pb-0 lg:pr-8" src="images/test1.jpeg" alt="">
-                <div>
-                    <h2 class="pb-3 text-neutral-900 text-center uppercase text-xl font-bold tracking-wider md:text-2xl lg:text-left lg:text-3xl">Soutien financier</h2>
-                    <p class="text-black text-center leading-5 lg:text-left lg:ml-10">J'entreprends Québec est réalisé grâce au soutien financier de la Stratégie de développement économique de la Ville de Québec</p>
+
+            <div class="relative">
+                <img src="images/logotype.svg" alt="logotype en fond"
+                class="w-auto mx-0 -z-10 absolute h-20 left-8 -top-10 sm:h-24 sm:left-16 sm:-top-12 md:h-32 md:left-24 md:-top-16 lg:h-44 lg:left-32 lg:-top-20 xl:h-52 xl:left-40 xl:-top-24 2xl:left-40 2xl:ml-32">
+                <!-- <img src="images/logotype.svg" alt=""
+                class="h-20 left-2 top-10 w-auto mx-0 -z-10 relative sm:h-24 sm:top-12 sm:left-4 md:h-32 md:left-6 md:top-16 lg:h-44 lg:top-20 lg:left-8 xl:h-52 xl:top-24 xl:left-10 2xl:h-64 2xl:top-32 2xl:left-20"> -->
+                <div class="bg-center bg-teal-600">
+                    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-36">
+                        <h1 class="mx-8 md:mx-12 lg:mx-14 text-4xl font-light tracking-wide leading-tight text-white md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+                            Nous générons <span class="font-bold">l'étincelle</span> entreprise entrepreneuriale et tissons des 
+                            <span class="font-bold">liens forts</span> entre 
+                            <span class="font-bold">passionnés.</span></h1>
+                    </div>
+                </div>
+                <img src="images/logotype.svg" alt="logotype en fond"
+                class="w-auto mx-0 -z-10 absolute h-20 right-10 -bottom-6 sm:h-24 sm:right-16 sm:-bottom-8 md:h-32 md:right-24 md:-bottom-10 lg:h-44 lg:right-32 lg:-bottom-12 xl:h-52 xl:right-40 xl:-bottom-14 2xl:right-40 2xl:mr-32">
+            </div>
+
+           <!--  bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply -->
+            <div>
+                <div class="mt-20 mb-16 mx-12 flex items-center justify-center flex-col md:mx-20 lg:flex-row lg:mb-20 lg:mt-32 2xl:mx-auto 2xl:max-w-screen-xl xl:mt-36">
+                    <img class="w-72 pb-5 lg:w-96 lg:pb-0 lg:pr-8" src="images/VDQ_accent.png" alt="">
+                    <div>
+                        <h2 class="pb-3 text-neutral-900 text-center uppercase text-xl font-light tracking-wider md:text-2xl lg:text-left lg:text-3xl">
+                            Soutien <span class="font-bold text-teal-600">financier</span></h2>
+                        <p class="text-black text-center leading-5 lg:text-left lg:ml-10">J'entreprends Québec est réalisé grâce au soutien financier de la Stratégie de développement économique de la Ville de Québec</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,36 +151,34 @@
 
         <!-- STATS -->
         <section>
-            <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
                 <div class="px-4 py-16 bg-neutral-900 md:px-8 dark:bg-neutral-900" id="stats" aria-labelledby="stats">
                     <div class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-white sm:grid-cols-3 xl:grid-cols-3 dark:text-white sm:p-8">
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-lime-300 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+25</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Évènements</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Évènements</h3>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-sky-400 sm:text-green-400 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+1500</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Participants</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Participants</h3>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-green-400 sm:text-sky-400 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+18</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Partenaires</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Partenaires</h3>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-sky-500 sm:text-lime-500 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+100</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Entreprises/Organismes</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Entreprises/Organismes</h3>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-teal-500 sm:text-sky-400 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+10K</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Liens crées</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Liens crées</h3>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <p class="text-sky-600 text-center tracking-wider mb-2 text-3xl font-extrabold md:text-4xl">+12</p>
-                            <h3 class="text-center text-white dark:text-gray-400">Start-up créées</h3>
+                            <h3 class="text-center text-white dark:text-gray-100">Start-up créées</h3>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         
     </main>
@@ -170,7 +186,7 @@
             
     <footer >
 
-            <div class="border-t border-gray-200 dark:border-gray-600">
+            <div class="border-t-8 border-white"">
                 <div class="px-4 py-8 bg-gradient-to-br from-green-400 to-blue-700 md:px-4 dark:bg-gray-800">
                     <div class="grid items-start max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-white sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 dark:text-white sm:p-8">
                         <div class="mx-2 px-1 flex flex-col items-center justify-center">
@@ -194,7 +210,7 @@
             </div>
 
 
-       <div class="bg-neutral-900 dark:neutral-900 border-t border-gray-200 darkLborder-gray-600">
+       <div class="bg-neutral-900 dark:neutral-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
