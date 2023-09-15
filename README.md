@@ -1,29 +1,26 @@
 # TP3_PoulinLarochelleKaren
+Components utilisés:
 
-
+Navigation:
 Navbar component source: Navbar with CTA button
 https://flowbite.com/docs/components/navbar/
 
 
+Bas de page:
 Footer component: Social media icons
 https://flowbite.com/docs/components/footer/
 
+
+Caroussel de la page Évènements:
 Carousel component: Default Slider
 https://flowbite.com/docs/components/carousel/
 
-Card component: Horizontal card
-https://flowbite.com/docs/components/card/
 
-Card component: Vertical Card
-https://tailwind-elements.com/docs/standard/components/cards/
-https://flowbite.com/docs/components/card/
-
+Inscription à l'infolettre page Évèenements:
 Newsletter Component: Call to Action
 https://tailwind-elements.com/docs/standard/designblocks/newsletter/
 
-Stats section partly used card full width tabs component from flowbite:
-https://flowbite.com/docs/components/card/
 
-
-Inspiration pour nesletter field:
-https://tailwindui.com/components/marketing/sections/newsletter-sections
+Section photos page Évènements:
+Masonry grid:
+https://flowbite.com/docs/components/gallery/
